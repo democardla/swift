@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C374D5E12879C978007150BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D5E02879C978007150BC /* AppDelegate.swift */; };
+		C374D5E32879C978007150BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D5E22879C978007150BC /* SceneDelegate.swift */; };
+		C374D5E52879C978007150BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D5E42879C978007150BC /* ViewController.swift */; };
+		C374D5E82879C978007150BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374D5E62879C978007150BC /* Main.storyboard */; };
+		C374D5EA2879C97A007150BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C374D5E92879C97A007150BC /* Assets.xcassets */; };
+		C374D5ED2879C97A007150BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374D5EB2879C97A007150BC /* LaunchScreen.storyboard */; };
+		C374D5F82879C97B007150BC /* ConcentrationCalculator2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D5F72879C97B007150BC /* ConcentrationCalculator2Tests.swift */; };
+		C374D6022879C97B007150BC /* ConcentrationCalculator2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D6012879C97B007150BC /* ConcentrationCalculator2UITests.swift */; };
+		C374D6042879C97B007150BC /* ConcentrationCalculator2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D6032879C97B007150BC /* ConcentrationCalculator2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C374D5F42879C97B007150BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C374D5D52879C978007150BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C374D5DC2879C978007150BC;
+			remoteInfo = ConcentrationCalculator2;
+		};
+		C374D5FE2879C97B007150BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C374D5D52879C978007150BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C374D5DC2879C978007150BC;
+			remoteInfo = ConcentrationCalculator2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C374D5DD2879C978007150BC /* ConcentrationCalculator2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationCalculator2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C374D5E02879C978007150BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C374D5E22879C978007150BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C374D5E42879C978007150BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C374D5E72879C978007150BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C374D5E92879C97A007150BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C374D5EC2879C97A007150BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C374D5EE2879C97A007150BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C374D5F32879C97B007150BC /* ConcentrationCalculator2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationCalculator2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C374D5F72879C97B007150BC /* ConcentrationCalculator2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationCalculator2Tests.swift; sourceTree = "<group>"; };
+		C374D5FD2879C97B007150BC /* ConcentrationCalculator2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationCalculator2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C374D6012879C97B007150BC /* ConcentrationCalculator2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationCalculator2UITests.swift; sourceTree = "<group>"; };
+		C374D6032879C97B007150BC /* ConcentrationCalculator2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationCalculator2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C374D5DA2879C978007150BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5F02879C97B007150BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5FA2879C97B007150BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C374D5D42879C978007150BC = {
+			isa = PBXGroup;
+			children = (
+				C374D5DF2879C978007150BC /* ConcentrationCalculator2 */,
+				C374D5F62879C97B007150BC /* ConcentrationCalculator2Tests */,
+				C374D6002879C97B007150BC /* ConcentrationCalculator2UITests */,
+				C374D5DE2879C978007150BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C374D5DE2879C978007150BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C374D5DD2879C978007150BC /* ConcentrationCalculator2.app */,
+				C374D5F32879C97B007150BC /* ConcentrationCalculator2Tests.xctest */,
+				C374D5FD2879C97B007150BC /* ConcentrationCalculator2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C374D5DF2879C978007150BC /* ConcentrationCalculator2 */ = {
+			isa = PBXGroup;
+			children = (
+				C374D6102879C998007150BC /* SupportingFiles */,
+				C374D5E42879C978007150BC /* ViewController.swift */,
+				C374D5E62879C978007150BC /* Main.storyboard */,
+				C374D5EB2879C97A007150BC /* LaunchScreen.storyboard */,
+				C374D5EE2879C97A007150BC /* Info.plist */,
+			);
+			path = ConcentrationCalculator2;
+			sourceTree = "<group>";
+		};
+		C374D5F62879C97B007150BC /* ConcentrationCalculator2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C374D5F72879C97B007150BC /* ConcentrationCalculator2Tests.swift */,
+			);
+			path = ConcentrationCalculator2Tests;
+			sourceTree = "<group>";
+		};
+		C374D6002879C97B007150BC /* ConcentrationCalculator2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C374D6012879C97B007150BC /* ConcentrationCalculator2UITests.swift */,
+				C374D6032879C97B007150BC /* ConcentrationCalculator2UITestsLaunchTests.swift */,
+			);
+			path = ConcentrationCalculator2UITests;
+			sourceTree = "<group>";
+		};
+		C374D6102879C998007150BC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C374D5E02879C978007150BC /* AppDelegate.swift */,
+				C374D5E22879C978007150BC /* SceneDelegate.swift */,
+				C374D5E92879C97A007150BC /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C374D5DC2879C978007150BC /* ConcentrationCalculator2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374D6072879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2" */;
+			buildPhases = (
+				C374D5D92879C978007150BC /* Sources */,
+				C374D5DA2879C978007150BC /* Frameworks */,
+				C374D5DB2879C978007150BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConcentrationCalculator2;
+			productName = ConcentrationCalculator2;
+			productReference = C374D5DD2879C978007150BC /* ConcentrationCalculator2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C374D5F22879C97B007150BC /* ConcentrationCalculator2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374D60A2879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2Tests" */;
+			buildPhases = (
+				C374D5EF2879C97B007150BC /* Sources */,
+				C374D5F02879C97B007150BC /* Frameworks */,
+				C374D5F12879C97B007150BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C374D5F52879C97B007150BC /* PBXTargetDependency */,
+			);
+			name = ConcentrationCalculator2Tests;
+			productName = ConcentrationCalculator2Tests;
+			productReference = C374D5F32879C97B007150BC /* ConcentrationCalculator2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C374D5FC2879C97B007150BC /* ConcentrationCalculator2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C374D60D2879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2UITests" */;
+			buildPhases = (
+				C374D5F92879C97B007150BC /* Sources */,
+				C374D5FA2879C97B007150BC /* Frameworks */,
+				C374D5FB2879C97B007150BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C374D5FF2879C97B007150BC /* PBXTargetDependency */,
+			);
+			name = ConcentrationCalculator2UITests;
+			productName = ConcentrationCalculator2UITests;
+			productReference = C374D5FD2879C97B007150BC /* ConcentrationCalculator2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C374D5D52879C978007150BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C374D5DC2879C978007150BC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C374D5F22879C97B007150BC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C374D5DC2879C978007150BC;
+					};
+					C374D5FC2879C97B007150BC = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C374D5DC2879C978007150BC;
+					};
+				};
+			};
+			buildConfigurationList = C374D5D82879C978007150BC /* Build configuration list for PBXProject "ConcentrationCalculator2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C374D5D42879C978007150BC;
+			productRefGroup = C374D5DE2879C978007150BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C374D5DC2879C978007150BC /* ConcentrationCalculator2 */,
+				C374D5F22879C97B007150BC /* ConcentrationCalculator2Tests */,
+				C374D5FC2879C97B007150BC /* ConcentrationCalculator2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C374D5DB2879C978007150BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374D5ED2879C97A007150BC /* LaunchScreen.storyboard in Resources */,
+				C374D5EA2879C97A007150BC /* Assets.xcassets in Resources */,
+				C374D5E82879C978007150BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5F12879C97B007150BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5FB2879C97B007150BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C374D5D92879C978007150BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374D5E52879C978007150BC /* ViewController.swift in Sources */,
+				C374D5E12879C978007150BC /* AppDelegate.swift in Sources */,
+				C374D5E32879C978007150BC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5EF2879C97B007150BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374D5F82879C97B007150BC /* ConcentrationCalculator2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C374D5F92879C97B007150BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C374D6022879C97B007150BC /* ConcentrationCalculator2UITests.swift in Sources */,
+				C374D6042879C97B007150BC /* ConcentrationCalculator2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C374D5F52879C97B007150BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C374D5DC2879C978007150BC /* ConcentrationCalculator2 */;
+			targetProxy = C374D5F42879C97B007150BC /* PBXContainerItemProxy */;
+		};
+		C374D5FF2879C97B007150BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C374D5DC2879C978007150BC /* ConcentrationCalculator2 */;
+			targetProxy = C374D5FE2879C97B007150BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C374D5E62879C978007150BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374D5E72879C978007150BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C374D5EB2879C97A007150BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374D5EC2879C97A007150BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C374D6052879C97B007150BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C374D6062879C97B007150BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C374D6082879C97B007150BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConcentrationCalculator2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C374D6092879C97B007150BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConcentrationCalculator2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C374D60B2879C97B007150BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConcentrationCalculator2.app/ConcentrationCalculator2";
+			};
+			name = Debug;
+		};
+		C374D60C2879C97B007150BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConcentrationCalculator2.app/ConcentrationCalculator2";
+			};
+			name = Release;
+		};
+		C374D60E2879C97B007150BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConcentrationCalculator2;
+			};
+			name = Debug;
+		};
+		C374D60F2879C97B007150BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DXNM5PPBP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = democardla.ConcentrationCalculator2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConcentrationCalculator2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C374D5D82879C978007150BC /* Build configuration list for PBXProject "ConcentrationCalculator2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374D6052879C97B007150BC /* Debug */,
+				C374D6062879C97B007150BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C374D6072879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374D6082879C97B007150BC /* Debug */,
+				C374D6092879C97B007150BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C374D60A2879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374D60B2879C97B007150BC /* Debug */,
+				C374D60C2879C97B007150BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C374D60D2879C97B007150BC /* Build configuration list for PBXNativeTarget "ConcentrationCalculator2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C374D60E2879C97B007150BC /* Debug */,
+				C374D60F2879C97B007150BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C374D5D52879C978007150BC /* Project object */;
+}

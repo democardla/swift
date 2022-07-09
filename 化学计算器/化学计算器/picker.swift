@@ -26,31 +26,32 @@ class picker: UIView {
     var unitsOfConcentration = ["uM","nM","M"]
     
     //声明文件中用到的组件：声明的实例在没有被调用的情况下是缺省状态
-    private weak var myPickerview: UIPickerView!
+    
     private weak var myTextField: UITextField!
     private weak var myImage: UIImageView!
-    
+    private weak var myPickerview: UIPickerView!
     private func setUp(){
         //创建实例
-        let myPickerview = UIPickerView()
-        let TextRect = CGRect(x: 19, y: 10, width: 30, height: 20)
-        let myTextField = UITextField()
-//        myTextField.borderStyle = UITextField.BorderStyle.roundedRect
-//        myTextField.backgroundColor = UIColor.blue
-//        myTextField.clearButtonMode = UITextField.ViewMode.always//输入框是否需要打开清除模式，
+        let TextRect = CGRect(x: 100, y: 100, width: 30, height: 20)
         
         let myUIImage = UIImageView()
+        let myTextField = UITextField()
+        myTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        myTextField.backgroundColor = UIColor.blue
+        myTextField.clearButtonMode = UITextField.ViewMode.always//输入框是否需要打开清除模式，
+        
+        let myPickerview = UIPickerView()
+        var viewLayer = myPickerview.layer
         
         //是否自适应
         myUIImage.translatesAutoresizingMaskIntoConstraints = false
         myPickerview.translatesAutoresizingMaskIntoConstraints = false
         myTextField .translatesAutoresizingMaskIntoConstraints = false
         
-        //将实例放到类实例的下面充当子实例
+        //将实例放到类实例的下面充当子实例：注意：addSubview(控件)控件的顺序决定了它的图层上下
         addSubview(myUIImage)
-        addSubview(myPickerview)
         addSubview(myTextField)
-        
+        addSubview(myPickerview)
         //设置实例的位置大小等参数
         myUIImage.leadingAnchor.constraint(equalTo: leadingAnchor).isActive
         myUIImage.trailingAnchor.constraint(equalTo: trailingAnchor).isActive
@@ -58,6 +59,7 @@ class picker: UIView {
         myUIImage.topAnchor.constraint(equalTo: topAnchor).isActive
         myUIImage.image = UIImage(systemName: "checkmark.square.fill")
         
+        myTextField.leadingAnchor.constraint(equalTo: myUIImage.trailingAnchor).isActive
             //PickerView设置
         myPickerview.dataSource = self
         myPickerview.delegate = self

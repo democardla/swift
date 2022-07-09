@@ -11,6 +11,8 @@
 		C31290C12877BFAB009A62CD /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31290C02877BFAB009A62CD /* KeyboardViewController.swift */; };
 		C31290C52877BFAB009A62CD /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C31290BE2877BFAB009A62CD /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C36DA8FE287486E700E47F9E /* picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DA8FD287486E600E47F9E /* picker.swift */; };
+		C374D58D2879C13D007150BC /* myCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C374D58C2879C13D007150BC /* myCalculator.swift */; };
+		C374D58F2879C398007150BC /* myCalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374D5912879C398007150BC /* myCalculator.storyboard */; };
 		C37D5BCD28781F7C00E80806 /* myCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D5BCC28781F7C00E80806 /* myCustomView.swift */; };
 		C3A6C16428576F70000646B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6C16328576F70000646B2 /* AppDelegate.swift */; };
 		C3A6C16628576F70000646B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6C16528576F70000646B2 /* SceneDelegate.swift */; };
@@ -70,6 +72,8 @@
 		C31290C02877BFAB009A62CD /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		C31290C22877BFAB009A62CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36DA8FD287486E600E47F9E /* picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picker.swift; sourceTree = "<group>"; };
+		C374D58C2879C13D007150BC /* myCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCalculator.swift; sourceTree = "<group>"; };
+		C374D5902879C398007150BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/myCalculator.storyboard; sourceTree = "<group>"; };
 		C37D5BCC28781F7C00E80806 /* myCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCustomView.swift; sourceTree = "<group>"; };
 		C3A6C16028576F70000646B2 /* 化学计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "化学计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A6C16328576F70000646B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,24 @@
 			path = CustomKeyboard;
 			sourceTree = "<group>";
 		};
+		C374D5892879C09A007150BC /* ViewControllerFirst */ = {
+			isa = PBXGroup;
+			children = (
+				C3A6C16728576F70000646B2 /* ViewController.swift */,
+				C3A6C16928576F70000646B2 /* Main.storyboard */,
+			);
+			path = ViewControllerFirst;
+			sourceTree = "<group>";
+		};
+		C374D58E2879C145007150BC /* myCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				C374D5912879C398007150BC /* myCalculator.storyboard */,
+				C374D58C2879C13D007150BC /* myCalculator.swift */,
+			);
+			path = myCalculator;
+			sourceTree = "<group>";
+		};
 		C3A6C15728576F70000646B2 = {
 			isa = PBXGroup;
 			children = (
@@ -157,14 +179,14 @@
 			children = (
 				C31290B828772B90009A62CD /* ChineseSubdivisions.plist */,
 				C3A6C19328576FCA000646B2 /* Supporting */,
-				C3A6C16728576F70000646B2 /* ViewController.swift */,
-				C3A6C16928576F70000646B2 /* Main.storyboard */,
+				C374D5892879C09A007150BC /* ViewControllerFirst */,
 				C3A6C17128576F73000646B2 /* Info.plist */,
 				C3A6C19428577032000646B2 /* calculateMethod.swift */,
 				C3A6C19828586A24000646B2 /* Concentration.swift */,
 				C3A6C19A2858A17D000646B2 /* UnitExtension.swift */,
 				C36DA8FD287486E600E47F9E /* picker.swift */,
 				C37D5BCC28781F7C00E80806 /* myCustomView.swift */,
+				C374D58E2879C145007150BC /* myCalculator */,
 			);
 			path = "化学计算器";
 			sourceTree = "<group>";
@@ -332,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3A6C17028576F73000646B2 /* LaunchScreen.storyboard in Resources */,
+				C374D58F2879C398007150BC /* myCalculator.storyboard in Resources */,
 				C31290B928772B91009A62CD /* ChineseSubdivisions.plist in Resources */,
 				C3A6C16D28576F73000646B2 /* Assets.xcassets in Resources */,
 				C3A6C16B28576F70000646B2 /* Main.storyboard in Resources */,
@@ -367,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C374D58D2879C13D007150BC /* myCalculator.swift in Sources */,
 				C3A6C16828576F70000646B2 /* ViewController.swift in Sources */,
 				C3A6C19B2858A17D000646B2 /* UnitExtension.swift in Sources */,
 				C36DA8FE287486E700E47F9E /* picker.swift in Sources */,
@@ -416,6 +440,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C374D5912879C398007150BC /* myCalculator.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C374D5902879C398007150BC /* en */,
+			);
+			name = myCalculator.storyboard;
+			sourceTree = "<group>";
+		};
 		C3A6C16928576F70000646B2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

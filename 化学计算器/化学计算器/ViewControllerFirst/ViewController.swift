@@ -33,6 +33,10 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var pickerTest: picker!
     
+    @IBAction func locationCheck(_ sender: myCustomView) {
+        let currentLocation = [myCustomViewTest.frame.minX,myCustomViewTest.frame.minY]
+        print(currentLocation)
+    }
     override func viewDidLoad(){
         super.viewDidLoad()
         stateStringOfCalculator.delegate = self

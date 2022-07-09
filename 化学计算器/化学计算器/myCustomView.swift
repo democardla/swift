@@ -18,18 +18,12 @@ class myCustomView: UIControl {
          return checked ? UIImage(systemName: "checkmark.circle.fill")! : UIImage(systemName: "circle")!
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
-    
     @IBInspectable//在属性前使用它时，该属性便可以在属性观察器中出现了
     public var checked: Bool = false {
         didSet{
             imageView.image = displayImage
         }
     }
-    
 
     private func setUp(){
         let ImageRect = CGRect(x: 10, y: 10, width: 50, height: 50)
@@ -44,7 +38,7 @@ class myCustomView: UIControl {
         imageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive
         imageView.topAnchor.constraint(equalTo: topAnchor).isActive
-        imageView.image = UIImage(systemName: "checkmark.circle.fill")
+        imageView.image = UIImage(systemName: "circle")
         
         imageView.contentMode = .scaleAspectFit
 
@@ -52,10 +46,14 @@ class myCustomView: UIControl {
         
         //为组件添加响应行为
         addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
+        //addRarget("添加一个响应对象","他将要执行的行为是","与哪个UIControl.Event相对应")
+        
     }
     
+    //@objc func 创建实例方法
     @objc func touchUpInside(){
         checked = !checked
+        sendActions(for: .valueChanged)
     }
     
     override init(frame: CGRect) {
