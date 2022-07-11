@@ -7,8 +7,10 @@
 
 import Foundation
 
-protocol haveUnit {
+protocol HaveUnit {
     var value:Float? { get }
+    var unit: String? { get }
+    var unitsGrade:Dictionary<String, Int> { get }
     /**
      返回化学计量单位的等级单位的等级
      */
@@ -21,5 +23,7 @@ protocol haveUnit {
     /**
      返回当前对象的状态日志
      */
-    func returnLog() -> String?
+    func returnLog()
+    
 }
+
