@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusSelector: UITextField!
     
     var status = ["初始浓度", "初始体积", "最终浓度", "最终体积"]
+    var state: String?
     var statusPicker: UIPickerView!
-    
+    var unitLocker = ["", ""]
     //是否是体积输入状态
     private var isVolumeInputState = false {
         didSet{
@@ -30,8 +31,8 @@ class ViewController: UIViewController {
     
     
     //单位：以后再放进plist文件里吧
-    let unitsOfConcentration = ["µM", "nM", "M", "X", "µg/L", "ng/L", "mg/L", "g/L"]
-    let unitOfVolume = ["µL", "nL", "mL", "L"]
+    let unitsOfConcentration = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    let unitOfVolume = ["nL", "µL", "mL", "L"]
     
     //创建View实例
     @IBOutlet weak var inputRect: UITextField!
@@ -39,37 +40,67 @@ class ViewController: UIViewController {
     
     //创建Workspace用来接收前台产生的数据
     lazy var myWorkspace = Workspace()
+    
     //提交数据到Workspace
     @IBAction func submitData(_ sender: UIButton) {
-        if myWorkspace.countOfArgumentsAreNotEmpty() < 3 {
+
+        
+        //TODO: 统一初始单位与最终单位类型一致，不可以出现mole浓度对应重量浓度的情况
+        
+        if inputRect.text!.isValidNumber()  {
+            let input = Float(inputRect.text!)! ?? nil
+            if !isVolumeInputState {
+                if state == "初始浓度"{
+                    var concentration = Concentration(value: input!, unit: unit!, isSubmit: .originally)
+                    myWorkspace.updateArguments(concentration)
+                    concentration.returnLog()
+                } else {
+                    var concentration = Concentration(value: input!, unit: unit!, isSubmit: .finally)
+                    myWorkspace.updateArguments(concentration)
+                    concentration.returnLog()
+                }
+                if unitLocker[0] == "" {
+                    unitLocker[0] = unit!
+                }
+            } else {
+                if state == "初始体积"{
+                    var volume = Volume(value: input!, unit: unit!, isSubmit: .originally)
+                    volume.isSubmit = .originally
+                    myWorkspace.updateArguments(volume)
+                    volume.returnLog()
+                    
+                } else {
+                    var volume = Volume(value: input!, unit: unit!, isSubmit: .finally)
+                    volume.isSubmit = Submit.originally
+                    myWorkspace.updateArguments(volume)
+                    volume.returnLog()
+                }
+                if unitLocker[1] == ""{
+                    unitLocker[1] = unit!
+                }
+            }
+        } else {
+            //TODO: 弹出输入不符合格式警告
+            if inputRect.text! == "" {
+                print("input please!")
+                
+            } else {
+                print("It is invalid!")
+            }
+        }
+        //改变按钮展示的文字
+        if myWorkspace.dataCount < 3 {
             sender.setTitle("submit", for: UIControl.State.normal)
         } else {
             sender.setTitle("start", for: UIControl.State.normal)
         }
-        if inputRect.text != "" {
-            //TODO: 弹出输入不符合格式警告
-            var inputRegex = ""
-            do {
-                let regex = try NSRegularExpression(pattern: inputRegex, options: .caseInsensitive)
-                return regex.matches(in: <#T##String#>, range: <#T##NSRange#>)
-            } catch {
-                
-            }
-            let input = Float(inputRect.text!)! ?? nil
-            if !isVolumeInputState {
-                var concentration = Concentration(concentration: input!, unit: unit!)
-                concentration.isSubmit = Submit.originally
-                myWorkspace.updateArguments(concentration)
-                concentration.returnLog()
-            } else {
-                var volume = Volume(value: input!, unit: unit!)
-                volume.isSubmit = Submit.originally
-                myWorkspace.updateArguments(volume)
-                volume.returnLog()
-            }
-            
+        if sender.title(for: UIControl.State.normal)! == "start" {
+            print("\(myWorkspace.getOutcomes().returnLog())")
         }
     }
+    
+    
+    
     
     //创建一个视图用来展示已经提交的数据
     override func viewDidLoad() {
@@ -97,7 +128,6 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextFieldDelegate{
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -124,6 +154,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == statusPicker {
             unit = status[row]
+            self.state = unit
         } else {
             unit = units[row]
         }
@@ -145,20 +176,19 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     }
 }
 
-
-////如何修改UIPickerView的框架大小
-//class XX{
-//    //在storyboard中创建一个PickerView并将它与代码关联
-//    @IBOutlet weak var unitPicker: UIPickerView!
-//
-//    //在viewDidLoad()方法中加载实例的样式
-//    override func viewDidLoad(){
-//        super.viewDidLoad()
-//        unitPicker.delegate = self
-//        unitPicker.dataSource = self
-//
-//        //用来更改UIPickerView实例大小的方法，更改它的Layer
-//        var unitPickerLayer = unitPicker.layer
-//        unitPickerLayer.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
-//    }
-//}
+//在String中填写正则表达式的格式，并定义对象是符合标准的
+extension String {
+    func isValidNumber() -> Bool{
+        var inputRegex: String = "[0-9]+\\.[0-9]+|[0-9]+"
+        do {
+            let regex = try NSRegularExpression(pattern: inputRegex, options: .caseInsensitive)
+            let arrOfRegex = regex.matches(in: self, range: NSMakeRange(0, self.count))
+            if arrOfRegex.count != 1 {
+                return false
+            }
+        } catch {
+            
+        }
+        return true
+    }
+}
