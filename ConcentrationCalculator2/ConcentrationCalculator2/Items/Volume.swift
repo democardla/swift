@@ -19,11 +19,11 @@ public class Volume: Hashable, HaveUnit{
     }
     
     var value: Float?
-    var unit: String?
+    var unit: String? = "mL"
     var isSubmit: Submit?
     
-    public let VolumeUnitGrade = ["nL", "µL", "mL", "L"]
-
+    public static let VolumeUnit = ["nL", "µL", "mL", "L"]
+    
     //可哈希操作
     public static func == (lhs: Volume, rhs: Volume) -> Bool {
         if lhs.unit != rhs.unit {
@@ -43,15 +43,15 @@ public class Volume: Hashable, HaveUnit{
         if self.unit! == unit {
             return self
         }
-        let ounit = Double(VolumeUnitGrade.firstIndex(of: self.unit!)!)
-        let funit = Double(VolumeUnitGrade.firstIndex(of: unit)!)
-        let base = pow(Double(10), 3*(funit-ounit))
+        let ounit = Volume.VolumeUnit.firstIndex(of: self.unit!)!
+        let funit = Volume.VolumeUnit.firstIndex(of: unit)!
+        let base = pow(Double(10), 3*Double((funit-ounit)))
         self.value = self.value!*Float(base)
         self.unit = unit
         return self
     }
     
-    func returnLog() {
+    func returnLog() -> String? {
         if(value != nil){
             var state: String?
             if isSubmit == .originally {
@@ -59,22 +59,9 @@ public class Volume: Hashable, HaveUnit{
             } else {
                 state = "最终体积是"
             }
-           print("\(state! + String(value!) + unit!)")
+            var ret = state! + String(value!) + unit!
+            return ret
         }
+        return nil
     }
-    
-    
-    //    func returnUnitGrade(input: String) -> Int? {
-    //        return VolumeUnitGrade.firstIndex(of: unit!)
-    //    }
-    //
-    //    func turnToSmallerUnit(OriginalUnit OU: String, FinalUnit FU: String) -> String? {
-    //        return ""
-    //    }
-    //
-    //    func turnToBiggerUnit(OriginalUnit OU: String, FinalUnit FU: String) -> String? {
-    //        return ""
-    //    }
 }
-
-

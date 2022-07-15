@@ -7,38 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "97005C80-1382-4BE6-A75E-047B7E8CDC72"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ConcentrationCalculator2/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "submitData(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D619DE78-2A6C-4071-8C11-5383727934B4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ConcentrationCalculator2/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "submitData(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DDC65FAE-9920-4D0F-B73E-5F4808D2EC18"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -46,10 +14,290 @@
             filePath = "ConcentrationCalculator2/Workspace.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "dataCount"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - 630b17799c163b5f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.unit.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - 4d3a96bb0e6c8b53"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.unit.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - a30fc2fb76338762"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.unit.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - cbf3458f28ae60e2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.unit.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - 4714a81699c3b135"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ConcentrationCalculator2.ViewController"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "768">
+               </Location>
+               <Location
+                  uuid = "9835B314-3D42-4DD3-8FAC-A048F973C8C8 - 4de230bd57759920"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ConcentrationCalculator2.ViewController&gt;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "744">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - 47e7ef61e0e76d82"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.state.getter : Swift.String"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - 36cda2b4a0b4fc36"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.state.setter : Swift.String"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - b48db900d65fe1b9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.state.modify : Swift.String"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - aa9551f845dd1ed2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.state.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - 4714a81699c3b7e7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ConcentrationCalculator2.ViewController"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "FF6C758F-ABD8-4E30-B01E-150872884E0F - 4de230bd57759ff2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ConcentrationCalculator2.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ConcentrationCalculator2.ViewController&gt;"
+                  moduleName = "ConcentrationCalculator2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/democardla/Desktop/swift/ConcentrationCalculator2/ConcentrationCalculator2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "544">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0394DDDE-CEAC-465D-8285-02ADE4D08350"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "submitData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF89A696-8274-4E85-9024-D53032B22875"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "createObject()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BC9B527-C87F-4678-A4E0-D965BBCBCA70"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "buttonDisplay(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B572265-9C24-43D3-ACE9-E5A3B0707498"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConcentrationCalculator2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "buttonDisplay(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
