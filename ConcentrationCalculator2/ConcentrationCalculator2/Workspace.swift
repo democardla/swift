@@ -58,6 +58,7 @@ class Workspace {
         } else {
             self.FC = argument
         }
+        argument.setVolumeUnit()
     }
     public func updateArguments(_ argument: Volume){
         if argument.isSubmit == Submit.originally {
@@ -109,13 +110,13 @@ class Workspace {
     
     func returnLowerUnit(OC: Concentration, FC: Concentration) -> String {
         if OC.isUnitModule == .mole {
-            if Int(Concentration.MoleConcentrationUnitsGrade.firstIndex(of: OC.unit!)!) <= Int(Concentration.MoleConcentrationUnitsGrade.firstIndex(of: FC.unit!)!) {
+            if Int(Concentration.MoleConcentrationUnits.firstIndex(of: OC.unit!)!) <= Int(Concentration.MoleConcentrationUnits.firstIndex(of: FC.unit!)!) {
                 return OC.unit!
             }
             return FC.unit!
         }
         if OC.isUnitModule == .weight {
-            if Int(Concentration.WeightConcentrationUnitGrade.firstIndex(of: OC.unit!)!) <= Int(Concentration.WeightConcentrationUnitGrade.firstIndex(of: FC.unit!)!) {
+            if Int(Concentration.WeightConcentrationUnits.firstIndex(of: OC.unit!)!) <= Int(Concentration.WeightConcentrationUnits.firstIndex(of: FC.unit!)!) {
                 return OC.unit!
             }
             return FC.unit!

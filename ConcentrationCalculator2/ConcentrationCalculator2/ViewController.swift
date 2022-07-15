@@ -25,13 +25,15 @@ class ViewController: UIViewController {
     
     //按照需求返回用于单位选择器展示的数组
     var units: [String] {
-        return isVolumeInputState ? Volume.VolumeUnit : unitsOfConcentration
+        return isVolumeInputState ? Volume.VolumeUnit : Concentration.VolumeUnit
     }
     //储存当前的单位
     var unit: String?
     
     //单位：以后再放进plist文件里吧
-    let unitsOfConcentration = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+//    let unitsOfConcentration = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    
+
     //    let VolumeUnit = ["nL", "µL", "mL", "L"]
     
     //创建View实例
@@ -53,6 +55,7 @@ class ViewController: UIViewController {
         if sender.title(for: UIControl.State.normal) == "Start"{
             getAnswer(sender)
         }
+            
         buttonDisplay(sender)
         if sender.title(for: UIControl.State.normal) == "Start" && outcomeField.text != ""{
             sender.setTitle("RESET", for: UIControl.State.normal)
@@ -144,8 +147,10 @@ class ViewController: UIViewController {
     func resetFormat(_ sender: UIButton) {
         sender.setTitle("Submit", for: UIControl.State.normal)
         outcomeField.text = ""
+        Concentration.resetVolumeUnit()
         loadInputRect()
         loadStatusSelector()
+        
     }
     
     //创建一个视图用来展示已经提交的数据

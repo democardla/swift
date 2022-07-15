@@ -36,9 +36,23 @@ public class Concentration: Hashable,HaveUnit{
     var value: Float?
     //创建单位变量用来记录计量单位
     var unit: String?
+    public static var VolumeUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    static func resetVolumeUnit() {
+        Concentration.VolumeUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    }
+    func setVolumeUnit(){
+        var ret: [String]
+        if isUnitModule == .weight {
+            Concentration.VolumeUnit = Concentration.WeightConcentrationUnits
+        } else if isUnitModule == .mole {
+            Concentration.VolumeUnit = Concentration.MoleConcentrationUnits
+        } else if isUnitModule == .time {
+            Concentration.VolumeUnit = [Concentration.TimeConcentration]
+        }
+    }
     //单位的等级
-    public static let WeightConcentrationUnitGrade = ["ng/L", "µg/L", "mg/L", "g/L"]
-    public static let MoleConcentrationUnitsGrade = ["nM", "µM", "mM", "M"]
+    public static let WeightConcentrationUnits = ["ng/L", "µg/L", "mg/L", "g/L"]
+    public static let MoleConcentrationUnits = ["nM", "µM", "mM", "M"]
     public static let TimeConcentration = "X"
     var isSubmit: Submit?
     enum unitModule {
@@ -49,12 +63,12 @@ public class Concentration: Hashable,HaveUnit{
     
     //当前单位模式
     var isUnitModule: unitModule {
-        if Concentration.WeightConcentrationUnitGrade.contains(unit!){
+        if Concentration.WeightConcentrationUnits.contains(unit!){
             return .weight
-        } else if Concentration.MoleConcentrationUnitsGrade.contains(unit!){
+        } else if Concentration.MoleConcentrationUnits.contains(unit!){
             return .mole
         }
-        return .time
+            return .time
     }
     
     //返回对象创建日志：可以用来作为viewcontroller中的展示窗口的数据来源
@@ -77,16 +91,16 @@ public class Concentration: Hashable,HaveUnit{
             return self
         }
         if isUnitModule == .weight{
-            let ounit = Concentration.WeightConcentrationUnitGrade.firstIndex(of: self.unit!)!
-            let funit = Concentration.WeightConcentrationUnitGrade.firstIndex(of: unit)!
+            let ounit = Concentration.WeightConcentrationUnits.firstIndex(of: self.unit!)!
+            let funit = Concentration.WeightConcentrationUnits.firstIndex(of: unit)!
             //10的n次方幂
             let base = pow(Double(10), Double(3*(funit-ounit)))
             self.value = self.value!*Float(base)
             self.unit = unit
         }
         if isUnitModule == .mole{
-            let ounit = Concentration.MoleConcentrationUnitsGrade.firstIndex(of: self.unit!)!
-            let funit = Concentration.MoleConcentrationUnitsGrade.firstIndex(of: unit)!
+            let ounit = Concentration.MoleConcentrationUnits.firstIndex(of: self.unit!)!
+            let funit = Concentration.MoleConcentrationUnits.firstIndex(of: unit)!
             let base = pow(Double(10), Double(3*(funit-ounit)))
             self.value = self.value!*Float(base)
             self.unit = unit
