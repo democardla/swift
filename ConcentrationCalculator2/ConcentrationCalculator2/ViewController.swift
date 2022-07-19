@@ -11,30 +11,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var statusSelector: UITextField!
     @IBOutlet weak var outcomeField: UITextField!
+    @IBOutlet weak var Ready: UILabel!
+    @IBOutlet weak var componentsOverview: UITableView!
     
     var status = ["初始浓度", "初始体积", "最终浓度", "最终体积"]
     var state = "初始浓度"
     var statusPicker: UIPickerView!
-    var unitLocker = ["", ""]
     //是否是体积输入状态
     private var isVolumeInputState = false {
         didSet{
-            unitPicker.reloadComponent(0)//重置unitPicker的展示属性
+            //unitPicker.reloadComponent(0)//重置unitPicker的展示属性,但是它不会重置所选行
+            unitPicker.reloadAllComponents()
         }
     }
     
     //按照需求返回用于单位选择器展示的数组
     var units: [String] {
-        return isVolumeInputState ? Volume.VolumeUnit : Concentration.VolumeUnit
+        return isVolumeInputState ? Volume.VolumeUnit : Concentration.ConcentrationUnit
     }
     //储存当前的单位
     var unit: String?
     
     //单位：以后再放进plist文件里吧
-//    let unitsOfConcentration = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
-    
-
-    //    let VolumeUnit = ["nL", "µL", "mL", "L"]
     
     //创建View实例
     @IBOutlet weak var inputRect: UITextField!
@@ -49,20 +47,22 @@ class ViewController: UIViewController {
             myWorkspace = Workspace()
             resetFormat(sender)
         } else {
-        //TODO: 统一初始单位与最终单位类型一致，不可以出现mole浓度对应重量浓度的情况
-        createObject()
-        TextRectDisplay()
-        if sender.title(for: UIControl.State.normal) == "Start"{
-            getAnswer(sender)
-        }
+            //TODO: 统一初始单位与最终单位类型一致，不可以出现mole浓度对应重量浓度的情况
+            createObject()
+            TextRectDisplay()
+            if sender.title(for: UIControl.State.normal) == "Start"{
+                getAnswer(sender)
+            }
             
-        buttonDisplay(sender)
-        if sender.title(for: UIControl.State.normal) == "Start" && outcomeField.text != ""{
-            sender.setTitle("RESET", for: UIControl.State.normal)
-        }
+            buttonDisplay(sender)
+            if sender.title(for: UIControl.State.normal) == "Start" && outcomeField.text != ""{
+                sender.setTitle("RESET", for: UIControl.State.normal)
+            }
             
+            readyTips()
         }
     }
+    
     
     //TODO: 改变按钮展示的文字
     //!!!: 提交与开始计算按钮的展示文字信息切换有问题:注意是因为buttonDisplay()与开始计算两步操作之间没有延迟，以至于按钮没能改变他的title
@@ -110,9 +110,6 @@ class ViewController: UIViewController {
                         var concentration = Concentration(value: input, unit: unit!, isSubmit: .finally)
                         myWorkspace.updateArguments(concentration)
                     }
-                    if unitLocker[0] == "" {
-                        unitLocker[0] = unit!
-                    }
                 } else {
                     if statusSelector.text == "初始体积"{
                         var volume = Volume(value: input, unit: unit!, isSubmit: .originally)
@@ -121,10 +118,6 @@ class ViewController: UIViewController {
                     if statusSelector.text == "最终体积"{
                         var volume = Volume(value: input, unit: unit!, isSubmit: .finally)
                         myWorkspace.updateArguments(volume)
-                    }
-                    
-                    if unitLocker[1] == ""{
-                        unitLocker[1] = unit!
                     }
                 }
             } else {
@@ -140,19 +133,23 @@ class ViewController: UIViewController {
     
     func getAnswer(_ sender: UIButton){
         
-            outcomeField.text = myWorkspace.getOutcomes().returnLog()
-            outcomeField.textAlignment = .center
+        outcomeField.text = myWorkspace.getOutcomes().returnLog()
+        outcomeField.textAlignment = .center
     }
     
     func resetFormat(_ sender: UIButton) {
         sender.setTitle("Submit", for: UIControl.State.normal)
         outcomeField.text = ""
-        Concentration.resetVolumeUnit()
+        Concentration.resetConcentrationUnit()
         loadInputRect()
         loadStatusSelector()
-        
     }
     
+    //就绪提示窗的展示
+    func readyTips() {
+        Ready.text = "Component Ready!"
+        Ready.textColor = UIColor.red
+    }
     //创建一个视图用来展示已经提交的数据
     override func viewDidLoad() {
         super.viewDidLoad()

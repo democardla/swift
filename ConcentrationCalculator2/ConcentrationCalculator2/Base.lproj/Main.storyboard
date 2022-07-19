@@ -45,6 +45,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-vL-I6a">
+                                        <rect key="frame" x="29" y="127" width="140" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -64,6 +71,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="Ready" destination="oAW-vL-I6a" id="gu3-07-K1R"/>
+                        <outlet property="componentsOverview" destination="1lf-Zv-yCC" id="pob-J9-jh3"/>
                         <outlet property="inputRect" destination="i1I-Uy-O0w" id="vhG-Q0-G7Z"/>
                         <outlet property="outcomeField" destination="uGt-kN-miB" id="3w4-4h-sh4"/>
                         <outlet property="statusSelector" destination="QbU-HN-Jf0" id="gu8-dn-aGI"/>

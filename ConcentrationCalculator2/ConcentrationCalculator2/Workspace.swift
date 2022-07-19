@@ -53,12 +53,12 @@ class Workspace {
     
     //更新变量状态：重载了两个函数
     public func updateArguments(_ argument: Concentration){
+        argument.setConcentrationUnit()
         if argument.isSubmit == Submit.originally {
             self.OC = argument
         } else {
             self.FC = argument
         }
-        argument.setVolumeUnit()
     }
     public func updateArguments(_ argument: Volume){
         if argument.isSubmit == Submit.originally {

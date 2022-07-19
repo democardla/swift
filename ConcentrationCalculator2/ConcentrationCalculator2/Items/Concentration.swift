@@ -36,18 +36,18 @@ public class Concentration: Hashable,HaveUnit{
     var value: Float?
     //创建单位变量用来记录计量单位
     var unit: String?
-    public static var VolumeUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
-    static func resetVolumeUnit() {
-        Concentration.VolumeUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    public static var ConcentrationUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
+    static func resetConcentrationUnit() {
+        Concentration.ConcentrationUnit = ["nM", "µM", "mM", "M", "X", "ng/L", "µg/L", "mg/L", "g/L"]
     }
-    func setVolumeUnit(){
+    func setConcentrationUnit(){
         var ret: [String]
         if isUnitModule == .weight {
-            Concentration.VolumeUnit = Concentration.WeightConcentrationUnits
+            Concentration.ConcentrationUnit = Concentration.WeightConcentrationUnits
         } else if isUnitModule == .mole {
-            Concentration.VolumeUnit = Concentration.MoleConcentrationUnits
+            Concentration.ConcentrationUnit = Concentration.MoleConcentrationUnits
         } else if isUnitModule == .time {
-            Concentration.VolumeUnit = [Concentration.TimeConcentration]
+            Concentration.ConcentrationUnit = ["X"]
         }
     }
     //单位的等级
